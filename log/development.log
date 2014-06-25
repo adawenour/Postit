@@ -5733,3 +5733,546 @@ Processing by PostsController#index as HTML
   Rendered layouts/_navigation.html.erb (0.4ms)
   Rendered layouts/_messages.html.erb (0.1ms)
 Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2014-06-25 04:28:01 -0400
+Processing by PostsController#index as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 65ms (Views: 55.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-06-25 04:28:02 -0400
+Processing by PostsController#new as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (0.6ms)
+  Rendered posts/new.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 04:28:05 -0400
+Processing by PostsController#index as HTML
+  Rendered shared/_content_title.html.erb (0.2ms)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-06-25 04:28:06 -0400
+Processing by PostsController#new as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (0.1ms)
+  Rendered posts/new.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-06-25 04:28:36 -0400
+Processing by PostsController#new as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (0.5ms)
+  Rendered posts/new.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-06-25 04:28:38 -0400
+Processing by PostsController#new as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (0.1ms)
+  Rendered posts/new.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 23ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 04:28:40 -0400
+Processing by PostsController#index as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 26ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-06-25 04:28:41 -0400
+Processing by PostsController#new as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (0.1ms)
+  Rendered posts/new.html.erb within layouts/application (3.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 27ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-06-25 04:28:48 -0400
+Processing by PostsController#new as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (31.1ms)
+  Rendered posts/new.html.erb within layouts/application (33.7ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-06-25 04:31:57 -0400
+Processing by PostsController#new as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+ERROR: compiling _app_views_posts__form_html_erb__2047742835419084339_70217330118600 RAISED /Users/Macintosh/Desktop/Reddit-Clone/app/views/posts/_form.html.erb:28: syntax error, unexpected ',', expecting ')'
+... 'Create Post' : 'Update Post', class: 'btn btn-primary') );...
+...                               ^
+/Users/Macintosh/Desktop/Reddit-Clone/app/views/posts/_form.html.erb:28: syntax error, unexpected ')', expecting keyword_end
+...t', class: 'btn btn-primary') );@output_buffer.safe_append='
+...                               ^
+Function body:           def _app_views_posts__form_html_erb__2047742835419084339_70217330118600(local_assigns, output_buffer)
+            _old_virtual_path, @virtual_path = @virtual_path, "posts/_form";_old_output_buffer = @output_buffer;;@output_buffer = output_buffer || ActionView::OutputBuffer.new; if @post.errors.any? 
+@output_buffer.safe_append='<div class=\'row\'>
+	<div class=\'alert alert-error span8\'>
+		<h5> Please fix the following errors: </h5>
+		<ul>
+';			 @post.errors.full_messages.each do |msg| 
+@output_buffer.safe_append='			<li>';@output_buffer.append=( msg );@output_buffer.safe_append='</li>
+';			 end 
+@output_buffer.safe_append='		</ul>
+	</div>
+</div>
+'; end 
+@output_buffer.safe_append='
+<div class=\'well\'>
+	';@output_buffer.append=  form_for @post do |f| @output_buffer.safe_append='
+	<div class=\'control-group\'>
+		';@output_buffer.append=( f.label :title );@output_buffer.safe_append='
+		';@output_buffer.append=( f.text_field :title );@output_buffer.safe_append='
+	</div>
+	<div class=\'control-group\'>
+		';@output_buffer.append=( f.label :url );@output_buffer.safe_append='
+		';@output_buffer.append=( f.text_field :url );@output_buffer.safe_append='
+	</div>
+	<div class=\'control-group\'>
+		';@output_buffer.append=( f.label :description );@output_buffer.safe_append='
+		';@output_buffer.append=( f.text_area :description, rows: 5 );@output_buffer.safe_append='
+	</div>
+	';@output_buffer.append=( f.submit (@post.new_record? ? 'Create Post' : 'Update Post', class: 'btn btn-primary') );@output_buffer.safe_append='
+';	 end 
+@output_buffer.safe_append='</div>';@output_buffer.to_s
+          ensure
+            @virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+
+Backtrace: /Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `module_eval'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/template.rb:299:in `compile'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/template.rb:248:in `block in compile!'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `synchronize'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/template.rb:236:in `compile!'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/template.rb:142:in `block in render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:306:in `render_partial'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:279:in `block in render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/partial_renderer.rb:278:in `render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:47:in `render_partial'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/helpers/rendering_helper.rb:27:in `render'
+/Users/Macintosh/Desktop/Reddit-Clone/app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb__2229453376435550777_70217319730800'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/template.rb:143:in `block in render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:161:in `instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/template.rb:141:in `render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:49:in `block (2 levels) in render_template'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:48:in `block in render_template'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:56:in `render_with_layout'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/template_renderer.rb:17:in `render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:42:in `render_template'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_view/renderer/renderer.rb:23:in `render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:127:in `_render_template'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/streaming.rb:219:in `_render_template'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:120:in `render_to_body'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:97:in `render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:16:in `render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+/Users/Macintosh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/core_ext/benchmark.rb:12:in `ms'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:189:in `process_action'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/rendering.rb:10:in `process_action'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:413:in `_run__3487426040650943862__process_action__callbacks'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/rescue.rb:29:in `process_action'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `block in instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/notifications.rb:159:in `instrument'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.0/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/abstract_controller/base.rb:136:in `process'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/abstract_controller/rendering.rb:44:in `process'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:195:in `dispatch'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_controller/metal.rb:231:in `block in action'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:48:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:71:in `block in call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `each'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/journey/router.rb:59:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/routing/route_set.rb:655:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/etag.rb:23:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/conditionalget.rb:25:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/flash.rb:241:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:225:in `context'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/session/abstract/id.rb:220:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/cookies.rb:486:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.0/lib/active_record/query_cache.rb:36:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.0/lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activerecord-4.0.0/lib/active_record/migration.rb:369:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:373:in `_run__1882999858338652758__call__callbacks'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/callbacks.rb:80:in `run_callbacks'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:38:in `call_app'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `block in call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `block in tagged'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:25:in `tagged'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/tagged_logging.rb:67:in `tagged'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/railties-4.0.0/lib/rails/rack/logger.rb:21:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/quiet_assets-1.0.2/lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/activesupport-4.0.0/lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/static.rb:64:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/railties-4.0.0/lib/rails/engine.rb:511:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/railties-4.0.0/lib/rails/application.rb:97:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/lock.rb:17:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/Users/Macintosh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+/Users/Macintosh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+/Users/Macintosh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+  Rendered posts/_form.html.erb (4.5ms)
+  Rendered posts/new.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (/Users/Macintosh/Desktop/Reddit-Clone/app/views/posts/_form.html.erb:28: syntax error, unexpected ',', expecting ')'
+... 'Create Post' : 'Update Post', class: 'btn btn-primary') );...
+...                               ^
+/Users/Macintosh/Desktop/Reddit-Clone/app/views/posts/_form.html.erb:28: syntax error, unexpected ')', expecting keyword_end
+...t', class: 'btn btn-primary') );@output_buffer.safe_append='
+...                               ^):
+    25: 		<%= f.label :description %>
+    26: 		<%= f.text_area :description, rows: 5 %>
+    27: 	</div>
+    28: 	<%= f.submit (@post.new_record? ? 'Create Post' : 'Update Post', class: 'btn btn-primary') %>
+    29: 	<% end %>
+    30: </div>
+  app/views/posts/new.html.erb:2:in `_app_views_posts_new_html_erb__2229453376435550777_70217319730800'
+
+
+  Rendered /Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered /Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (14.2ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-06-25 04:32:45 -0400
+Processing by PostsController#new as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (3.8ms)
+  Rendered posts/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navigation.html.erb (0.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 20ms (Views: 18.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 04:35:38 -0400
+Processing by PostsController#index as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 21ms (Views: 20.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 04:35:40 -0400
+Processing by PostsController#index as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-06-25 04:35:40 -0400
+Processing by PostsController#new as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (5.7ms)
+  Rendered posts/new.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2014-06-25 04:37:39 -0400
+Processing by PostsController#new as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  Rendered posts/_form.html.erb (3.2ms)
+  Rendered posts/new.html.erb within layouts/application (5.5ms)
+  Rendered layouts/_navigation.html.erb (0.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 04:37:41 -0400
+Processing by PostsController#index as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 04:41:26 -0400
+Processing by PostsController#index as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  [1m[35mPost Load (0.3ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_navigation.html.erb (14.3ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined local variable or method `new_category_path' for #<#<Class:0x007fb97e023a20>:0x007fb97e0324f8>):
+     7:   </li>
+     8: </ul>
+     9: <div class='nav_item'>
+    10: 	<%= link_to 'New Category', new_category_path, class: 'btn btn-small' %>
+    11: </div>
+    12: <div class='nav_item'>
+    13: 	<%= link_to 'New Post', new_post_path, class: 'btn btn-success btn-small' %>
+  app/views/layouts/_navigation.html.erb:10:in `_app_views_layouts__navigation_html_erb__4297149271974980569_70217320536000'
+  app/views/layouts/application.html.erb:19:in `_app_views_layouts_application_html_erb___3185545285388830238_70217319454860'
+
+
+  Rendered /Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 04:45:11 -0400
+
+SyntaxError (/Users/Macintosh/Desktop/Reddit-Clone/config/routes.rb:4: syntax error, unexpected [, expecting keyword_do or '{' or '('
+  resources :categories, only [:new, :create, :show]
+                               ^):
+  activesupport (4.0.0) lib/active_support/dependencies.rb:222:in `load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:222:in `block in load'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:213:in `load_dependency'
+  activesupport (4.0.0) lib/active_support/dependencies.rb:222:in `load'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:40:in `each'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:16:in `reload!'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  activesupport (4.0.0) lib/active_support/file_update_checker.rb:75:in `call'
+  activesupport (4.0.0) lib/active_support/file_update_checker.rb:75:in `execute'
+  railties (4.0.0) lib/rails/application/routes_reloader.rb:7:in `execute'
+  railties (4.0.0) lib/rails/application/finisher.rb:81:in `block (2 levels) in <module:Finisher>'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:397:in `_run__3137255452019906426__prepare__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:62:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Macintosh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Macintosh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Macintosh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+  Rendered /Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-06-25 04:45:56 -0400
+Processing by PostsController#index as HTML
+  Rendered shared/_content_title.html.erb (0.1ms)
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 23ms (Views: 14.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2014-06-25 04:46:47 -0400
+Processing by CategoriesController#new as HTML
+Completed 500 Internal Server Error in 2ms
+
+ActionView::MissingTemplate (Missing template categories/new, application/new with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :raw, :ruby, :jbuilder, :coffee]}. Searched in:
+  * "/Users/Macintosh/Desktop/Reddit-Clone/app/views"
+):
+  actionpack (4.0.0) lib/action_view/path_set.rb:46:in `find'
+  actionpack (4.0.0) lib/action_view/lookup_context.rb:115:in `find'
+  actionpack (4.0.0) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:35:in `determine_template'
+  actionpack (4.0.0) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.0) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.0) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/Macintosh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.0.0) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.0) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:403:in `_run__3378979522954112198__process_action__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.0) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.0) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.0) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+  activerecord (4.0.0) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.0) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1882999858338652758__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  quiet_assets (1.0.2) lib/quiet_assets.rb:18:in `call_with_quiet_assets'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/Macintosh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/Macintosh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/Macintosh/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/Macintosh/.rvm/gems/ruby-2.1.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.8ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2014-06-25 04:48:52 -0400
+Processing by CategoriesController#new as HTML
+  Rendered categories/new.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2014-06-25 04:48:58 -0400
+Processing by CategoriesController#new as HTML
+  Rendered shared/_content_title.html.erb (0.2ms)
+  Rendered categories/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation.html.erb (0.5ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
