@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
 			redirect_to root_path
 		else
 			flash[:error] = "There is something wrong with your username or password."
-			redirect_to login_path #or render :new
+			redirect_to login_path
 		end
 	end
 
