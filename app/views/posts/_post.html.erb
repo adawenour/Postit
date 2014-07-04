@@ -1,4 +1,16 @@
 <div class="row">
+	<div class='span0 well text-center'>
+		<%= link_to '' do %>
+		<i class='icon-arrow-up'></i>
+		
+		<% end %>
+		<br/>
+		<%= link_to '' do %>
+		<i class='icon-arrow-down'></i>
+		
+		<% end %>
+	</div>
+
 		<div class="span8 well">
 			<%= render post.categories %>
 			<h4><%= link_to post.title, fix_url(post.url) %></h4>
@@ -8,9 +20,9 @@
 				<small>at <%= display_datetime(post.created_at) %></small>
 			</p>
 			<small>
-				<span>
-					<%= link_to("#{post.comments.size} comments", post_path(post)) %>
-				</span>
+				<span class="label label-warning">
+        			<%= link_to("#{post.comments.size} comments", post_path(post)) %> 
+        		</span>
 			</small>
 		</div>
 	</div>
