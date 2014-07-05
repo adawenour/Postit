@@ -9,13 +9,16 @@ PostitTemplate::Application.routes.draw do
 
 
   resources :posts, except: [:destroy] do
-  	resources :comments, only: [:create]
+    member do
+      post 'vote'
+    end
+  	resources :comments, only: [:create] 
   end
   resources :categories, only: [:new, :create, :show]
   resources :users, only: [:show, :create, :edit, :update]
 end
 
-#POST /votes => 'VotesController#create'
+# POST /votes => 'VotesController#create'
 
 # POST /posts/3/vote => 'PostsController#vote'
 # POST /comments/4/vote => 'CommentsController#vote'
