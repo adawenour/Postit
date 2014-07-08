@@ -28,6 +28,14 @@ I will be building every part of this application from scratch, which will be a 
 
  Topics Overview
  =============
+
+Understanging "THE RAILS WAY" Philosophy.
+Convention over configuration.
+Don't repeat yourself.
+Dissecting a Rails application from top to bottom.
+Deep dive into main Rails components: routes, controller, ActiveRecord, view templates.
+
+
 Debugging using pry, server logs and reading stack traces.
 
 Applicaiton planning and workflow through Entity–relationship diagrams, mockups and UI iterations
@@ -61,13 +69,15 @@ Parameter passing
 
 REST, resources and forms
 
+Request/Reponse processing/Resourceful routing
+
 Validations
 
 Render vs redirect
 
 Strong parameters vs attr_accessible (Rails 4 topic)
 
-ADVANCED TOPICS
+OTHER ADVANCED TOPICS
 ===============
 
 Nested resources: building compelx URLs
@@ -76,7 +86,9 @@ Slugs: pretty URLs for SEO and bookmarking
 
 Helpers
 
-Partials
+Building APIs
+
+Partials/Refactoring
 
 Authentication,permissions & sessions: register a new user, login, logout,authorization
 
