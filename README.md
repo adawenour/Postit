@@ -104,6 +104,8 @@ Adding time zones
 
 Use modules to extract common logic
 
+Admin roles
+
 Creating and publishing a gem
 
 2-factor authentication with Twilio
