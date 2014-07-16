@@ -14,7 +14,7 @@ Tracks who created every comment, vote, and post
 Organize posts by category
 View and edit user profiles
 Uses roles to allow admins to edit all posts
-Uses ajax to vote
+Uses ajax to vote-obtrusive and unobtrusive javascript
 User permissions/authorization
 Slugs as URLs
 Display time based on user specified time zone
