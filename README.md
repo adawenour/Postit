@@ -6,21 +6,21 @@ Online here http://postit416.herokuapp.com/
 Features from scratch:
 =========
 
-Built with Ruby 2 and Rails 4
-Create and edit posts
-Comment and vote on posts
-Authentication from scratch
-Tracks who created every comment, vote, and post
-Organize posts by category
-View and edit user profiles
+Built with Ruby 2 and Rails 4.
+Create and edit posts.
+Comment and vote on posts.
+Authentication from scratch.
+Tracks who created every comment, vote, and post.
+Organize posts by category.
+View and edit user profiles.
 Simple roles-Build a simple way to keep track of roles, and selectively expose functionality in the application.
-Uses ajax to vote-obtrusive and unobtrusive javascript
-User permissions/authorization
-Slugs as URLs
-Display time based on user specified time zone
-Deployed to Heroku
-Uses gem to extract common logic
-2-factor authentication
+Uses ajax to vote-obtrusive and unobtrusive javascript.
+User permissions/authorization.
+Slugs as URLs.
+Display time based on user specified time zone.
+Deployed to Heroku.
+Uses gem to extract common logic.
+2-factor authentication.
 Creating and publishing Voting gem.
 
 
