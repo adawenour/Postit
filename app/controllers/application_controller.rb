@@ -21,9 +21,8 @@ class ApplicationController < ActionController::Base
   end
 
   def require_admin
-    if !logged_in? || !current.admin
+    access_denied unless logged_in? and current_user.admin?
   end
-end
 
 def access_denied 
   flash[:error] = "You can't do that"

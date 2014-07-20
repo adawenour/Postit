@@ -1,6 +1,9 @@
 class PostsController < ApplicationController
   before_action :set_post, only: [:show, :edit, :update, :vote]
   before_action :require_user, except: [:show, :index]
+  before_action :correct_user, only: [:edit, :update]
+
+
 
   def index
   	@posts = Post.all.sort_by{|x| x.total_votes}.reverse
@@ -75,4 +78,11 @@ end
   def set_post
     @post = Post.find_by slug: params[:id]
   end
+
+  def correct_user
+    access_denied unless logged_in? and (current_user == @post.user || current_user.admin?)
+    
+    #can code as well, access_denied if !logged_in  || (logged_in? and current_user != @post.user)
+  end
+
 end
