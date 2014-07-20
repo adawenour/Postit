@@ -13,7 +13,7 @@ Authentication from scratch
 Tracks who created every comment, vote, and post
 Organize posts by category
 View and edit user profiles
-Uses roles to allow admins to edit all posts
+Simple roles-Build a simple way to keep track of roles, and selectively expose functionality in the application.
 Uses ajax to vote-obtrusive and unobtrusive javascript
 User permissions/authorization
 Slugs as URLs
