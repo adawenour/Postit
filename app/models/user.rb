@@ -20,5 +20,4 @@ class User < ActiveRecord::Base
 	def moderator?
 		self.role == 'moderator?'
 	end
-	
 end

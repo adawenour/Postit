@@ -1,8 +1,11 @@
-<% if @post.user == current_user %>
+<%if logged_in? %>
+<% @post.user == current_user || current_user.admin? %>
 	<p class='pull-right'>
 		<span class="icon-edit"></span>[<%= link_to 'edit this post', edit_post_path(@post)%>]
 	</p>
 <% end %>
+<!--! if @post.user || current_user.admin? post creator or admin can only see edit link and preform edit action on posts-->
+
 
 <p>
 <%= render @post.categories %>
