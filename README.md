@@ -19,6 +19,7 @@ User permissions/authorization.
 Slugs as URLs.
 Display time based on user specified time zone.
 Deployed to Heroku.
+Metaprogramming.
 Uses gem to extract common logic.
 2-factor authentication.
 Creating and publishing Voting gem.
