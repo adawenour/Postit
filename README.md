@@ -27,6 +27,7 @@ Creating and publishing Voting gem.
 
 Going through an advanced developer course taught at Tealeaf Academy by experienced senior level developers through pre-record lessons,live chats and live video sessions discussing workflows and core topics in greater details and peeling back rails conventions. 
 
+
 I will be building every part of this application from scratch, which will be a clone of the popular news-sharing site Reddit. Going through the core Rails concept in detail, peeling away all the conventions or "magic" at work to get a deeper and great understanding of the core framework itself to have the ability of bending it to your will when explicitly changes or configurations need to be made in the progress of development, that might go against the present rails conventions. Also understanding at a deeper level all the aspect of the framework that are at work. As well as having the ability to see how a senior level developer would tackle the same problem through their thought process/workflow is invaluable experience and is also what the courses offers. Putting everything into perspective is key. Topics such as why rails chooses the conventions it does..how web development can be with languages such as JAVA and PHP and the tedious configuration processes and more are valuable discussions to cover. The last feature I will be building and publishing is a Voting rails gem as well.
 
  Topics Overview
