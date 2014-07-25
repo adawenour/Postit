@@ -24,6 +24,7 @@
 			<span class="icon-tags"></span>
 			<%= render post.categories %>
 			<h4><%= link_to post.title, fix_url(post.url), :target => "_blank" %></h4> 
+			<%= image_tag post.image.url(:medium), class: "img-polaroid" %>
 			<p><%= post.description %></p>
 			<p>
 				<span class='quiet'>posted by</span>  <%= link_to post.user.username, user_path(post.user) %>

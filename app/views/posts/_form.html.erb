@@ -1,7 +1,7 @@
 <%= render 'shared/errors', obj: @post %>
 
 <div class='well'>
-	<%= form_for @post do |f| %>
+	<%= form_for @post, html: { multipart: true } do |f| %>
 	<div class='control-group'>
 		<%= f.label :title %>
 		<%= f.text_field :title %>
@@ -10,6 +10,12 @@
 		<%= f.label :url %>
 		<%= f.text_field :url %>
 	</div>
+
+	<div class="control-group">
+    <%= f.label :image, 'Upload an image' %>
+    <%= f.file_field :image, class: "control-group" %>
+  	</div>
+
 	<div class='control-group'>
 		<%= f.label :description %>
 		<%= f.text_area :description, rows: 5 %>
