@@ -72,7 +72,7 @@ end
   private
 
   def post_params
-    params.require(:post).permit(:title, :url, :description, :image, category_ids: [])
+    params.require(:post).permit(:title, :url, :description, :image, :image_remote_url, category_ids: [])
   end
 
   def set_post

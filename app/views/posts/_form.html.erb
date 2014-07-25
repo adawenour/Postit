@@ -12,8 +12,13 @@
 	</div>
 
 	<div class="control-group">
-    <%= f.label :image, 'Upload an image' %>
-    <%= f.file_field :image, class: "control-group" %>
+	    <%= f.label :image, 'Upload an image' %>
+	    <%= f.file_field :image, class: "control-group" %>
+  	</div>
+
+  	<div class="form-group">
+	   <%= f.label :Or_Add_Image_Upload_Via_URL %>
+	   <%= f.text_field :image_remote_url,  class: "form-control" %>
   	</div>
 
 	<div class='control-group'>

@@ -17,6 +17,7 @@ Simple roles-Build a simple way to keep track of roles, and selectively expose f
 Uses ajax to vote-obtrusive and unobtrusive javascript.
 User permissions/authorization.
 Slugs as URLs.
+Adding image upload support both through local machine and via remote url parsing with unique validations.(feature not deployed) 
 Display time based on user specified time zone.
 Deployed to Heroku.
 Metaprogramming.

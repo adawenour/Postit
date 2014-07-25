@@ -14,7 +14,7 @@
 
 <% render 'shared/content_title', title: @post.title %>
 
-<%= image_tag @post.image.url, class: "img-rounded" %>
+<%= image_tag @post.image.url, :size => "600x600", class: "img-rounded" %>
 
 <p>
 	<%= @post.description %>
