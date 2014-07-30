@@ -4,6 +4,8 @@ PostitTemplate::Application.routes.draw do
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   get '/logout', to: 'sessions#destory'
+  get '/pin', to: 'sessions#pin'
+  post '/pin', to: 'sessions#pin'
 
 
 

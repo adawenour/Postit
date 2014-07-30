@@ -8,6 +8,7 @@ gem 'bootstrap-sass', '~> 2.3.2.0'
 gem 'bcrypt-ruby'
 gem 'voteable_ad'
 gem "paperclip", "~> 4.1"
+gem 'twilio-ruby'
 
 
 gem 'jquery-rails'
